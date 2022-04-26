@@ -23,7 +23,7 @@ function ProfilePersonalPasswordChange() {
   }
   return (
     <>
-      <h5 className="heading">Смена пароля</h5>
+      <h5 className="heading">Password Update</h5>
       <Form onSubmit={onSubmit}>
         <input name={FormInputs.passwordOld} placeholder="Current password" />
         <input name={FormInputs.password} placeholder="New password" />
