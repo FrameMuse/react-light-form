@@ -13,7 +13,7 @@ enum FormInputs {
   passwordConfirm = "password_confirm"
 }
 
-function ProfilePersonalPasswordChange() {
+function ProfilePasswordChange() {
   const { mutate } = useMutation(postCabinetUsersPassword)
   async function onSubmit(state: FormState<FormInputs, string>) { // Gather values from FormInputs and type them as `string`
     const { error } = await mutate(state.values) // Values are `password_old`, `password`, `password_confirm`
@@ -34,5 +34,5 @@ function ProfilePersonalPasswordChange() {
   )
 }
 
-export default ProfilePersonalPasswordChange
+export default ProfilePasswordChange
 ```
